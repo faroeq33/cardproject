@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-primary-cream;
+  font-family: "montserrat", sans-serif;
+}
+
+h1 {
+  font-family: "montserrat", sans-serif;
+}
+
+h2,
+.font-custom {
+  font-family: "fraunces", sans-serif;
+}
+
+svg {
+  display: inherit;
+}
