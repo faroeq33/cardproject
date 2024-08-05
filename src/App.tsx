@@ -1,10 +1,11 @@
-import "./App.css";
-import ProductCard from "./ProductCard";
+import ProductCard from "./components/ProductCard";
 
 function App() {
   return (
     <>
-      <ProductCard />
+      <main className="p-3">
+        <ProductCard />
+      </main>
     </>
   );
 }

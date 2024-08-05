@@ -13,12 +13,12 @@ function ProductCard() {
 
   return (
     <>
-      <div className="flex flex-col gap-4 bg-white rounded-b-xl">
+      <div className="flex flex-col gap-4 bg-white rounded-b-xl lg:flex-row">
         <div className="w-full">
           <img
             src="src/assets/images/image-product-mobile.jpg"
-            alt="chanel perfume"
-            className="w-full bg-black bg-cover border rounded-t-lg"
+            alt="Chanel Perfume"
+            className="w-full bg-black bg-cover border rounded-tl-lg rounded-tr-lg lg:rounded-l-lg lg:rounded-tr-none"
           />
         </div>
         <div className="pl-4">
