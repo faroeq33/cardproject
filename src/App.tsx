@@ -4,9 +4,7 @@ import ProductCard from "./ProductCard";
 function App() {
   return (
     <>
-      <div className="">
-        <ProductCard />
-      </div>
+      <ProductCard />
     </>
   );
 }
