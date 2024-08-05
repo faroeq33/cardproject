@@ -1,5 +1,6 @@
 import Button from "./Button";
 import ShoppingCartIcon from "./ShoppingCartIcon";
+import CategoryText from "./CategoryText";
 
 function ProductCard() {
   const product = {
@@ -13,29 +14,21 @@ function ProductCard() {
 
   return (
     <>
-      <div className="flex flex-col gap-4 bg-white rounded-b-xl lg:flex-row">
-        <div className="w-full">
+      <div className="flex flex-col gap-4 bg-white rounded-b-xl lg:flex-row ">
+        <div className="w-full lg:w-1/2">
           <img
             src="src/assets/images/image-product-mobile.jpg"
             alt="Chanel Perfume"
             className="w-full bg-black bg-cover border rounded-tl-lg rounded-tr-lg lg:rounded-l-lg lg:rounded-tr-none"
           />
         </div>
-        <div className="pl-4">
-          <p
-            className="m-0 text-xs tracking-widest text-left uppercase text-neutral-dark-grayish-blue"
-            style={{
-              fontWeight: "500",
-              fontSizeAdjust: "12px",
-              letterSpacing: "5px",
-            }}
-          >
-            {product.category}
-          </p>
-        </div>
 
-        <div className="px-4 pb-4 space-y-4 text-left cardbody">
+        <div className="px-4 pb-4 space-y-4 text-left lg:w-1/2 lg:pt-4 cardbody">
+          <div className="flex-none lg:flex-1">
+            <CategoryText name={product.category} />
+          </div>
           <h2 className="text-3xl font-bold">{product.name}</h2>
+
           <p className="text-neutral-dark-grayish-blue">
             {product.description}
           </p>
