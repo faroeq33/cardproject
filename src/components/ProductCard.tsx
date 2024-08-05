@@ -14,7 +14,7 @@ function ProductCard() {
 
   return (
     <>
-      <div className="flex flex-col gap-4 bg-white rounded-b-xl lg:flex-row ">
+      <div className="flex flex-col gap-4 bg-white rounded-xl lg:flex-row">
         <div className="w-full lg:w-1/2">
           <img
             src="src/assets/images/image-product-mobile.jpg"
