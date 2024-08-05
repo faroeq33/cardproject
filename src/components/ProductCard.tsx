@@ -14,16 +14,16 @@ function ProductCard() {
 
   return (
     <>
-      <div className="flex flex-col gap-4 bg-white rounded-xl lg:flex-row">
+      <div className="flex flex-col items-stretch bg-white rounded-xl lg:flex-row">
         <div className="w-full lg:w-1/2">
           <img
             src="src/assets/images/image-product-mobile.jpg"
             alt="Chanel Perfume"
-            className="w-full bg-black bg-cover border rounded-tl-lg rounded-tr-lg lg:rounded-l-lg lg:rounded-tr-none"
+            className="object-cover h-full rounded-tl-lg rounded-tr-lg lg:rounded-l-lg lg:rounded-tr-none"
           />
         </div>
 
-        <div className="px-4 pb-4 space-y-4 text-left lg:w-1/2 lg:pt-4 cardbody">
+        <div className="w-full px-4 pb-4 space-y-4 text-left lg:w-1/2 lg:pt-4 cardbody">
           <div className="flex-none lg:flex-1">
             <CategoryText name={product.category} />
           </div>
